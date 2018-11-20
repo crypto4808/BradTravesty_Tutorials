@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>HTML Cheatsheet</title>
+
+    </head>
+
+    <body>
+        <a href ="blog.html">Go to blog</a>
+        <hr>
+        <!--Headings -->
+        <h1>Heading One</h1>
+        <h2>Heading Two</h2>
+        <h3>Heading Two</h3>
+        <h4>Heading Two</h4>
+        <h5>Heading Two</h5>
+        <h6>Heading Two</h6>
+
+
+    <!--Paragraph -->
+    <p>
+    This is some paragraph text
+            <strong>This text should be strong</strong>
+
+            <em>Emphasize this text</em>
+
+            This is some paragraph text
+
+            This is some paragraph text
+
+            This is some paragraph text
+
+            This is some paragraph text
+
+            This is some paragraph text
+
+            This is some paragraph text
+
+    </p>
+
+
+        <p>
+    This is some paragraph text
+            <a href ="http://google.com" target ="_blank">This is some paragraph text</a>
+
+            This is some paragraph text
+
+            This is some paragraph text
+
+            This is some paragraph text
+
+            This is some paragraph text
+
+            This is some paragraph text
+
+            This is some paragraph text
+
+            This is some paragraph text
+
+    </p>
+
+        <!-- Lists -->
+            <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+                <li>List Item 5</li>
+
+            </ul>
+
+
+            <ol>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+                <li>List Item 5</li>
+
+            </ol>
+
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Sandip Nallani</td>
+                    <td>sand@gmail.com</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Sandip Nallani</td>
+                    <td>sand@gmail.com</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Sandip Nallani</td>
+                    <td>sand@gmail.com</td>
+                    <td>35</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <!-- Forms-->
+        <form action ="process.php" method method ="POST">
+            <div>
+                <label>First Name</label>
+                <input type ="text" name ="firstName" value ="Enter First Name">
+                </div>
+
+            <br>
+            <div>
+                <label>Last Name</label>
+                <input type ="text" name ="lastName" value ="Enter last name">
+            </div>
+            <div>
+                <br>
+                <label>Email</label>
+                <input type ="email" name ="email" value = "Enter the email address">
+            </div>
+            <div>
+                <label>Message</label>
+                <textarea name ="message"></textarea>
+            </div>
+
+            <br>
+            <div>
+                <label>Age</label>
+                <input type ="number" name ="age" value="30">
+            </div>
+            <br>
+            <div>
+                <label>Birthday</label>
+                <input type ="date" name ="birthday">
+            </div>
+            <br>
+                <input type ="submit" name = "submit" value ="submit">
+
+        </form>
+
+
+        <!-- Button -->
+        <button>Click Me</button>
+
+        <!-- Image -->
+        <a href = "images/moto.jpg">
+            <img src ="images/moto.jpg" alt ="My Moto Image" width = "300" >
+
+         </a>
+
+        <!-- Quotations -->
+        <blockquote cite ="www.google.com">
+        This is some style code added to the quote
+        </blockquote>
+
+        <p>The <abbr title ="World Wide Web">WWW</abbr> is awesome</p>
+        <p><cite>HTML</cite> crash course by Brad Travesty</p>
+          <div style = "margin-top:500px"></div>
+    </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My HTML Page</title>
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+
+
+console.log('HELLO');
+/* Object literal*/
+
+var person ={
+
+    firstName: 'Sand',
+    lastName: 'Nallani',
+    age: 34,
+    children: ['Brianna','Nicholas'],
+    address: {
+        street: '555 something st',
+        city: 'Boston',
+        state: 'MA'
+    },
+    fullName:  function(){
+        return this.firstName + ' ' +  this.lastName;
+    }
+}
+console.log(person.fullName());
+var apple = new Object();
+/* add properties */
+apple.color = 'red';
+apple.shape ='round';
+
+apple.describe = function(){
+    return 'Constructor: An apple is the color ' + this.color +
+    ' and the shape ' + this.shape;
+}
+console.log(apple.describe());
+
+
+/*object constructor pattern */
+function Fruit(name,color, shape){
+    this.name= name;
+    this.color= color;
+    this.shape= shape;
+    this.describe = function(){
+        return 'Constructor Pattern: An apple is the color ' + this.color +
+        ' and the shape ' + this.shape;    }
+}
+
+var apple = new Fruit('apple','red','round');
+console.log(apple.describe());
+
+/*Arrays of objects */
+var users = [
+            {
+                name: 'John Doe',
+                age: 30
+            },
+            {
+                name: 'Mark Smith',
+                age: 44
+            },
+            {
+                name: 'Shelly Williams',
+                age: 20
+            }
+
+];
+
+console.log(users[0].name);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+HW Assignment
+make the application interavtive 
+put the url in comments and Brad will announce or feature your work
+
+high score store in local storage
+fetch random words from an API or module
+User could select difficulty with a user selection 2/3/5seconds
+submit a url in comments 
